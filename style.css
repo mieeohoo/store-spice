@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/* ======================================================
+  全体
+========================================================*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  color      : #383e45;
+  font-size  : 1.4rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.6rem;
+}
+
+ol,
+ul,
+dl {
+  list-style-position: inside;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+ul li {
+  list-style: none;
+}
+
+li::marker {
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  cursor         : pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  width : 100%;
+  height: 100%;
+}
+/* 共通 */
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.contents {
+  margin-top: 160px;
+}
+
+.flex {
+  display: flex;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;  /* Chrome、Safari用 */
+  -moz-writing-mode: vertical-rl;     /* Firefox用 */
+  -ms-writing-mode: tb-rl;            /* IE用 */
+}
+
+.sitetitle {
+  text-align: left;
+  margin-left: 70px;
+}
+
+.sec-title {
+  font-size: 3.6rem;
+}
+
+.sec-smtitle {
+  font-size: 2.2rem;
+}
+
+.navi.flex {
+  flex-direction: row-reverse;
+  height: 300px;
+}
+
+.menu li {
+  padding: 0 5%;
+}
+
+/* header============================================= */
+header {
+  width: 100%;
+  height: 600px;
+  background-image: url("images/key.jpg");
+  background-size: cover;
+}
+
+.header-contents {
+  padding: 3%;
+  color: #fff;
+}
+
+.to-store-btn {
+  width: 60px;
+  background-color: #333333;
+  text-align: center;
+  padding: 1% 0;
+}
+.to-store {
+  border: 1px solid #fff;
+  padding: 20% 10%;
+  vertical-align: middle;
+}
+
+/* main============================================== */
+/* 「お知らせ」 */
+.news-content.flex {
+  flex-direction: row-reverse;
+}
+
+#news .sec-title {
+  margin-left: 100px;
+}
+
+.news-article {
+  margin-top: 80px;
+}
+
+.news-article  dt {
+  border-right: 1px solid #000;
+  padding-right: 30px;
+}
+
+.news-article  dd {
+  margin-top: 0;
+  margin-left: 30px;
+  border-left: 1px solid #000;
+  padding-left: 30px;
+}
+
+/* 「創造」 */
+#create .sec-title {
+  margin-left:50px;;
+}
+
+#create .create-content.flex{
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.sec-img {
+  width: 650px;
+  height: 420px;
+  margin-top: 80px;
+  position: relative;
+}
+
+#create .sec-img img {
+  object-fit: cover;
+}
+
+#create .img-text {
+  background-color: #F9E906;
+  width: 50%;
+  text-align: center;
+  padding: 5% 0;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  color: #fff;
+}
+
+/* 「技術」 */
+#technology .sec-img img {
+  object-fit: cover;
+}
+
+#technology .img-text {
+  background-color: #952A26;
+  width: 50%;
+  text-align: center;
+  padding: 5% 0;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  color: #fff;
+}
+
+#technology .create-content.flex{
+  justify-content: flex-start;
+}
+
+/* map */
+#map iframe  {
+  width: 100vw;
+}
+
+/* footer============================================= */
+footer {
+  background-color: #000;
+  padding: 5%;
+  color: #fff;
+}
+
+footer .sitetitle {
+  font-size: 4.8rem;
+}
+
+.address {
+  margin-left: 50px;
+}
+
+.address p {
+  text-orientation: upright;
+}
+
+.footer-link {
+  margin-right: auto;
+}
+
+.footer-link li {
+  padding: 3%;
+}
+
+.footer-link li:first-child{
+  border-bottom: 1px solid #fff;
+}
+
+#copyright {
+  margin-top: 80px;
+  text-align: center;
+}

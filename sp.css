@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+
+  /* 共通 */
+  .contents {
+    margin-top: 50px;
+  }
+
+  .sec-title {
+    font-size  : 1.6rem;
+    font-weight: bold;
+  }
+
+  .sp-flex {
+    display     : flex;
+    border-right: 1px solid #000;
+    padding     : 2%;
+  }
+  .sp-flex:last-child {
+    border-left: 1px solid #000;
+
+  }
+
+  /* main================================ */
+  /* 「お知らせ」 */
+  #news .sec-title {
+    margin-left: 10px;
+  }
+
+  .news-article {
+    margin-top: 0;
+  }
+
+  .news-article dt {
+    border-right : none;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .news-article dd {
+    margin-top : 0;
+    margin-left: 0;
+    border-left : none;
+    padding-left: 0;
+  }
+
+  /* 「創造」 */
+  #create .sec-title {
+    margin-left: 0;
+  }
+
+  #create .img-text {
+    width: 100%;
+    bottom: -30px;
+    left: 0;
+    right:0;
+  }
+
+
+  /* 「技術」 */
+  #technology .img-text {
+    width: 100%;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+  }
+
+  /* footer============================= */
+  footer .sitetitle {
+    font-size: 1.8rem;
+    margin-left: 10px;
+  }
+
+  .address {
+    margin-left: 15px;
+  }
+
+  footer .menu li {
+    padding: 0 2%;
+  }
+
+  .footer-link li {
+    padding: 1%;
+  }
+}
